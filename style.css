@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+}
+
+main {
+    background-color:aliceblue;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 25px 0 0;
+    font-size: 25px;
+}
+
+h2 {
+    padding-top: 60px;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+h4 {
+    padding: 0 12px;
+}
+
+p {
+    max-width: 70ch;
+    padding: 12px;
+}
+
+p, h4 {
+    font-size: 16px;
+}
+
+span {
+    font-weight: bold;
+}
+
+header, a, button, div.contactinfo, footer {
+    color: white;
+}
+
+header {
+    background-color: #4C9F38;
+    height: auto;
+    /* max-width: 99vw; */
+    display: inline-grid;
+    grid-template-columns: 30vw 70vw;
+    align-items: center;
+}
+
+header > img {
+    height: 80px;
+}
+
+header > h1 {
+    max-width: 13ch;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+header > nav {
+    margin: 0 20px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+header > nav > ul > li {
+    justify-content: space-between;
+}
+
+nav > ul > li > a {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav > ul > li > a > img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.black {
+    color: black;
+}
+
+a:hover, button:hover {
+    opacity: .4;
+}
+
+.boxandimg {
+    margin: 40px 5%;
+    display: flex;
+}
+
+article {
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+article > p {
+    text-align: left;
+}
+
+div > img {
+    max-width: 15vw;
+    max-height: 15vw;
+    flex: auto;
+}
+
+.bubble, textarea, button {
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.bubble {
+    height: auto;
+    max-width: 75%;
+    background-color: aliceblue;
+    position: relative;
+    flex: auto;
+}
+
+.rightcolor {
+    border: .5vw solid #4A9E46;
+    margin-right: 2%;
+}
+
+.leftcolor {
+    border: .5vw solid #FFB621;
+    margin-left: 2%;
+}
+
+.boxcolor {
+    border: .5vw solid black;
+    padding: 8px;
+}
+
+.leftpoint:before, .rightpoint:before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-top: 1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    top: 25px;
+}
+
+.leftpoint:before {
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid #FFB621;
+    left: -2.5vw;
+}
+
+.rightpoint:before {
+    border-left: 1vw solid #4A9E46;
+    border-right: 1vw solid transparent;
+    right: -2.5vw;
+}
+
+textarea {
+    height: 100px;
+    width: 50vw;
+    padding: 10px;
+    display: block;
+    background-color: aliceblue;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    border: #FFB621;
+    background-color: #FFB621;
+    justify-items: right;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+div.contactinfo {
+    background-color: #074341;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    height: auto;
+    background-color: #4A9E46;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 2vw;
+}
+
+footer > img {
+    max-width: 20vw;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+footer > address {
+    grid-column: 1;
+    grid-row: 2;
+    justify-items: right;
+    padding-top: 2vw;
+}
+
+footer > iframe {
+    max-height: 150px;
+    max-width: 40vw;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media screen and (min-width: 600px) {
+    header > nav > ul > li > a {
+        font-size: 30px;
+    }
+
+    nav > ul > li > a > img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    header > img {
+        height: 100px;
+    }
+
+    .bubble {
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: #88B4B2;
+    }
+
+    main {
+        max-width: 75vw;
+    }
+
+    p, h3, div.contactinfo, footer > address {
+        font-size: 20px;
+    }
+
+    .bubble {
+        max-width: 25vw;
+    }
+
+    textarea {
+        width: 30vw;
+    }
+
+    div > img {
+        max-width: 8vw;
+        max-height: 8vw;
+    }
+
+    footer > img {
+        max-width: 15rem;
+    }
+}
