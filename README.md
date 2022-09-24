@@ -11,7 +11,7 @@ It should raise awareness among children and youth about importance of vaccines,
 To read about the process of making the website, visit the about site on the website.  
 https://ingring.github.io/good_health_learning_website/about.html
 
-## visit the website
+## Visit the website
 It is possible to visit this website both on github pages and folk.ntnu.no
 github pages: https://ingring.github.io/good_health_learning_website/index.html
 folk.ntnu.no: https://folk.ntnu.no/ingring/quarter-pounder/index.html
