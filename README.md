@@ -14,5 +14,5 @@ https://ingring.github.io/good_health_learning_website/about.html
 ## Visit the website
 It is possible to visit this website both on github pages and folk.ntnu.no
 
-  github pages: https://ingring.github.io/good_health_learning_website/index.html
-  folk.ntnu.no: https://folk.ntnu.no/ingring/quarter-pounder/index.html
+    github pages: https://ingring.github.io/good_health_learning_website/index.html \
+    folk.ntnu.no: https://folk.ntnu.no/ingring/quarter-pounder/index.html
